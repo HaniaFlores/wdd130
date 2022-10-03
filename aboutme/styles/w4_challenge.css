@@ -1,0 +1,56 @@
+/* * {
+    border: 2px solid blue;
+} */
+
+body {
+    background-color:#fca6c9;
+}
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+h1.title {
+    margin-bottom: 50px;
+}
+p {
+    color: white;
+    text-align: center;
+}
+h1.title:hover {
+    color: black;
+}
+div {
+    width:30%;
+    margin:0 auto;
+    font-family: Arial;
+    font-weight: bold;
+}
+li {
+    line-height: 30px;
+}
+#portrait{
+    display: block;
+    width: 15%;
+    margin: 20px auto;
+}
+section{
+    font-family: serif;
+    font-size: 30px;
+    width: 20%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 35px;
+    line-height: 45px;
+}
+
+footer p{
+    font-family: Arial;
+    color: black;
+    text-align: center;
+    line-height: 20px;
+    width: 35%;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 0.7em;
+}
