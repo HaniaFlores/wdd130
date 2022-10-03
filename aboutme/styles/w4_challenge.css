@@ -20,7 +20,7 @@ p {
 h1.title:hover {
     color: black;
 }
-div {
+#list {
     width:30%;
     margin:0 auto;
     font-family: Arial;
@@ -34,7 +34,7 @@ li {
     width: 15%;
     margin: 20px auto;
 }
-section{
+#quote{
     font-family: serif;
     font-size: 30px;
     width: 20%;
