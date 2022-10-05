@@ -1,5 +1,5 @@
 /* Max-width for all the content of the page. */
-#content{
+#content {
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -15,7 +15,7 @@ header {
 }
 
 /* Width for the logo */
-.logo{
+.logo {
     width: 80px;
 }
 
@@ -59,33 +59,33 @@ h4 {
 }
 
 /* Width for the three icons */
-.icon{
+.icon {
     width: 80px;
 }
 
 /* Centers all the elements inside main tag */
-main section{
+main section {
     text-align: center;
 }
 
 /* Background color and height for the last image */
-#background{
+#background {
     height: 725px;
     background-color: #119DA4;
 }
 
 /* Background color for the last message */
-.msg{
+.msg {
     background-color: #043565;
 }
 
 /* Text color title of last message */
-.msg h2{
+.msg h2 {
     color: #F8A012;
 }
 
 /* Text color last message */
-.msg p{
+.msg p {
     color: white;
 }
 
@@ -95,38 +95,36 @@ footer {
 }
 
 /* Footer h3 (doesn't exist yet) */
-footer h3{
+footer h3 {
     color: black;
 }
 
 /* Site Plan and Contact Us links */
-footer a{
+footer a {
     color: black;
     text-decoration: none;
 }
 
 /* Site Plan and Contact Us links interaction */
-footer a:hover{
+footer a:hover {
     color:#043565;
     text-decoration: underline;
 }
 
 /* Font size for the text inside footer tag */
-footer p{
+footer p {
     font-size: 1.2em;
 }
 
 /* Book now and Join Us button */
-.book,
-.join {
+.book, .join {
     background-color: #E9EB87;
     color: #043565;
     text-decoration: none;
 }
 
 /* Book Now and Join Us button interaction */
-.book:hover,
-.join:hover {
+.book:hover, .join:hover {
     background-color: #119DA4;
     color: white;
 }
