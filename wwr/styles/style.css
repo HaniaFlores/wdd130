@@ -303,63 +303,63 @@ summary {
 
 /* Salmon River*/
 #subtitle1 {
-    grid-column: 1/2; 
+    grid-column: 2/3; 
 }
 
 #description1 {
-    grid-column: 1/2;  
+    grid-column: 2/3;  
 }
 
 #details1 {
-    grid-column: 1/2; 
+    grid-column: 2/3; 
 }
 
 #images1 {
-    grid-column: 2/3;
+    grid-column: 1/2;
     grid-row: 1/4;
 }
 
 
 /* Desolation */
 #subtitle2 {
-    grid-column: 2/3;
+    grid-column: 1/2;
     grid-row: 5/6;
 }
 
 #description2 {
-    grid-column: 2/3;
+    grid-column: 1/2;
     grid-row: 6/7;
 }
 
 #details2 {
-    grid-column: 2/3;
+    grid-column: 1/2;
     grid-row: 7/8;
 }
 
 #images2 {
-    grid-column: 1/2;
+    grid-column: 2/3;
     grid-row: 5/8;
 }
 
 
 /* Grand Canyon */
 #subtitle3 {
-    grid-column: 1/2;
+    grid-column: 2/3;
     grid-row: 9/10;
 }
 
 #description3 {
-    grid-column: 1/2;
+    grid-column: 2/3;
     grid-row: 10/11;
 }
 
 #details3 {
-    grid-column: 1/2;
+    grid-column: 2/3;
     grid-row: 11/12;
 }
 
 #images3 {
-    grid-column: 2/3;
+    grid-column: 1/2;
     grid-row: 9/12;
 }
 
