@@ -1,4 +1,4 @@
-/* ---------------------- General CSS ------------------------*/
+/* ------------------------------------------- SHARED CSS ---------------------------------------------------*/
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Passion+One&family=Patua+One&family=Ubuntu:wght@300&display=swap');
@@ -143,7 +143,7 @@ nav a:hover {
 }
 
 
-/* ----------------- HOME PAGE GRID -------------- */
+/* --------------------------------------------- HOME PAGE GRID -------------------------------------------- */
 #home-page-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -277,4 +277,84 @@ nav a:hover {
 #contact-info {
     margin-top: 20px;
     color: #D18523;
+}
+
+
+
+/* ------------------------------------- FAQS WEBPAGE ----------------------------------------------------- */
+
+/*-------------- QUESTIONS CSS ------------- */
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #052A39;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 24px;
+    transition: 0.4s;
+    font-family: "Nunito Sans", Ubuntu, sans-serif;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    background-color: #92BE4B;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    line-height: 30px;
+    font-family: "Nunito Sans", Ubuntu, sans-serif;
+}
+
+
+.accordion:after {
+    content: '\002B';
+    color: #052A39;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+#important {
+    font-weight: bold;
+}
+
+#note {
+    font-style: italic;
+}
+
+/*------------------ FAQS WEBPAGE GRID ----------------------------- */
+
+#faqs-grid {
+    display: grid;
+    grid-template-columns: 2fr 50px 1fr;
+    grid-template-rows: 1fr;
+    padding: 50px;
+
+}
+
+#questions-grid {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#sunset {
+    grid-column: 3/4;
+    grid-row: 1/2;
 }

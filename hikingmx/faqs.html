@@ -15,7 +15,7 @@
             <a href="index.html" id="logo_link">
                 <img class="logo" src="images/logo.png" alt="Hiking Mexico Logo">
             </a>
-        
+
             <nav>
                 <a href="index.html">Home</a>
                 <a href="adventures.html">Adventures</a>
@@ -36,39 +36,52 @@
 
         <main id="faqs-grid">
 
-            <div id="q-background"></div>
-
             <section id="questions-grid">
-                <h4>How far in advance should I register for a trip?</h4>
-                <p>You can never register too early, but the ideal booking window is usually the 3–5-month time frame. Bottom line, if you
-                know you want to do a trip go ahead and register as soon as you know!</p>
 
-                <h4>I've never hiked or backpacked before - is that a problem?</h4>
-                <p>No, prior experience backpacking or hiking is not required or expected to join any of our trips. 
-                    What is important is that your physical fitness matches the difficulty of the trip you choose.</p>
-            
-                <h4>What equipment or clothing is required to wear?</h4>
-                <p>At the time of making your purchase, you will receive a guide for what clothing, accessories, and equipment to bring to
-                your experiences.</p>
+                <button class="accordion">How far in advance should I register for a trip?</button>
+                <div class="panel">
+                    <p>You can never register too early, but the ideal booking window is usually the 3–5-month time
+                        frame.</p>
+                    <p>Bottom line, if you know you want to do a trip go ahead and register as soon as you know!</p>
+                </div>
 
-                <h4>What is included in the trip?</h4>
-                <ul>
-                    <li>Guides trained in first aid.</li>
-                    <li>First aid kit.</li>
-                    <li>Snacks.</li>
-                    <li>Hydration.</li>
-                </ul>
-                <p>Important: We will provide a drink at the end of the experience. Hydration such as water and energy or moisturizing
-                    drinks is the responsibility of each person to carry in their backpack.</p>
+                <button class="accordion">I've never hiked or backpacked before - is that a problem?</button>
+                <div class="panel">
+                    <p>No, prior experience backpacking or hiking is not required or expected to join any of our trips.
+                    </p>
+                    <p>What is important is that your physical fitness matches the difficulty of the trip you choose.
+                    </p>
+                </div>
+
+                <button class="accordion">What equipment or clothing is required to wear?</button>
+                <div class="panel">
+                    <p>At the time of making your purchase, you will receive a guide for what clothing, accessories, and
+                        equipment to bring to
+                        your experiences.</p>
+                </div>
+
+                <button class="accordion">What is included in the trip?</button>
+                <div class="panel">
+                    <ul>
+                        <li>Guides trained in first aid.</li>
+                        <li>First aid kit.</li>
+                        <li>Snacks.</li>
+                        <li>Hydration.</li>
+                    </ul>
+                    <p><span id="important">Important:</span> We will provide a drink at the end of the experience.
+                        <span id="note">Hydration such as water and energy or moisturizing
+                            drinks is the responsibility of each person to carry in their backpack.</span></p>
+                </div>
+
             </section>
 
             <img id="sunset" src="images/sunset.jpg" alt="Sunset">
-            
+
         </main>
 
         <footer>
             <div id="footer-grid">
-            
+
                 <section id="form">
                     <h3>Hiking Mexico &copy; 2022 - Hania Flores</h3>
                     <h3 id="contact-info">Contact Information</h3>
@@ -77,7 +90,7 @@
                         <p><a href="mailto:reservations@hikingmx.com">reservations@hikingmx.com</a></p>
                     </address>
                 </section>
-            
+
                 <div id="footer-links">
                     <p><a href="faqs.html">FAQS</a></p>
                     <p><a href="site-plan.html">Site Plan</a></p>
@@ -85,6 +98,24 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
 </body>
 
 </html>
