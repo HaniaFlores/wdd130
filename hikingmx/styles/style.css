@@ -344,13 +344,13 @@ nav a:hover {
 }
 
 /* -- Part 1 (Information and details) --- */
-#cb-title, #lm-title, #mn-title {
+.title {
     grid-row: 1/2;
     align-self: center;
 }
 
 /* Details */
-#cb-details, #lm-details, #mn-details {
+.details {
     grid-row: 2/3;
     margin-top: 20px;
     display: grid;
@@ -358,18 +358,18 @@ nav a:hover {
     grid-template-rows: 50px 1fr;
 }
 
-#cb-details h3, #lm-details h3, #mn-details h3 {
+.details h3 {
     grid-column: 1/2;
     grid-row: 1/2;
     align-self: center;
 }
 
-#cb-part1, #lm-part1, #mn-part1 {
+.part1 {
     grid-column: 1/2;
     grid-row: 2/3;
 }
 
-#cb-part2, #lm-part2, #mn-part2 {
+.part2 {
     grid-column: 2/3;
     grid-row: 2/3;
 }
@@ -403,7 +403,7 @@ nav a:hover {
     padding: 20px;
 }
 
-#cb-price, #lm-price, #mn-price {
+.price {
     grid-column: 1/2;
     grid-row: 1/2;
     align-self: center;
@@ -412,12 +412,12 @@ nav a:hover {
     line-height: 50px;
 }
 
-#cb-price p, #lm-price p, #mn-price p {
+.price p {
     margin: 0;
     font-style: italic;
 }
 
-#cb-price h4, #lm-price h4, #mn-price h4 {
+.price h4 {
     color: #052A39;
 }
 
@@ -425,7 +425,7 @@ nav a:hover {
     font-weight: bold;
 }
 
-#cb-background, #lm-background, #mn-background {
+.background {
     grid-column: 1/2;
     grid-row: 1/2;
     background-color: #8ED8F6;
@@ -436,7 +436,7 @@ nav a:hover {
     box-shadow: 5px 5px 10px #6f7364;
 }
 
-#cb-img, #lm-img, #mn-img {
+.img {
     grid-column: 1/2;
     grid-row: 2/3;
     max-width: 600px;
