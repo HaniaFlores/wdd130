@@ -1,4 +1,4 @@
-/* ------------------------------------------- SHARED CSS ---------------------------------------------------*/
+ /* ------------------------------------------- SHARED CSS ---------------------------------------------------*/
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Passion+One&family=Patua+One&family=Ubuntu:wght@300&display=swap');
@@ -30,6 +30,10 @@ h2 {
 h1, h4, h3 {
     font-family: "Patua One";
     margin: 0;
+}
+
+h3 {
+    color: #052A39;
 }
 
 
@@ -98,6 +102,18 @@ nav a:hover {
     border-radius: 25px;
 }
 
+
+#hero-background2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: #D18523;
+    max-height: 50%;
+    opacity: .8;
+    border-radius: 25px;
+    margin-top: 50px;
+}
+
+
 #hero-msg {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -108,9 +124,33 @@ nav a:hover {
     z-index: 1;    
 }
 
+#hero-msg2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    max-height: 100%;
+    margin: 10px;
+    margin-top: 70px;
+    line-height: 60px;
+    color: #141414;
+    z-index: 1;
+}
+
+#banner-title {
+    font-size: 3em;
+    letter-spacing: 8px;
+}
+
+#hero-msg2 h4 {
+    font-family: "Nunito Sans", Ubuntu, sans-serif;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
 #hero-msg h3 {
     margin-block-start: 1em;
     margin-block-end: 1em;
+    color: #141414;
     font-family: "Nunito Sans", Ubuntu, sans-serif;
 }
 
@@ -254,6 +294,10 @@ nav a:hover {
     color: #FFFAF4;
 }
 
+#copyright {
+    color: #FFFAF4;
+}
+
 #form p, #form a{
     margin: 0 0 15px 0;
     color: #FFFAF4;
@@ -279,6 +323,193 @@ nav a:hover {
     color: #D18523;
 }
 
+
+/* ------------------------------------- ADVENTURES WEBPAGE ------------------------------------------------ */
+
+/* -------------- GRID ---------------- */
+#adventures-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 800px 800px 800px;
+    padding: 30px;
+}
+
+/* ---------- CASCADA DEL BARRO ------------ */
+#cb-info {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-rows: 50px 25% 1fr;
+    padding: 20px;
+}
+
+/* -- Part 1 (Information and details) --- */
+#cb-title, #lm-title, #mn-title {
+    grid-row: 1/2;
+    align-self: center;
+}
+
+/* Details */
+#cb-details, #lm-details, #mn-details {
+    grid-row: 2/3;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 50px 1fr;
+}
+
+#cb-details h3, #lm-details h3, #mn-details h3 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: center;
+}
+
+#cb-part1, #lm-part1, #mn-part1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#cb-part2, #lm-part2, #mn-part2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+/* Description */
+#cb-description {
+    grid-row: 3/4;
+    display: grid;
+    grid-template-rows: 50px 300px;
+    margin-top: 20px;
+}
+
+#cb-description h3, #lm-description h3, #mn-description h3 {
+    grid-row: 1/2;
+    align-self: center;
+}
+
+#cb-description p, #lm-description p, #mn-description p {
+    grid-row: 2/3;
+    align-self: center;
+    margin: 0;
+}
+
+/* --- Part 2 (Price and image) --- */
+#cb-div {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 70%;
+    padding: 20px;
+}
+
+#cb-price, #lm-price, #mn-price {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    line-height: 50px;
+}
+
+#cb-price p, #lm-price p, #mn-price p {
+    margin: 0;
+    font-style: italic;
+}
+
+#cb-price h4, #lm-price h4, #mn-price h4 {
+    color: #052A39;
+}
+
+.months {
+    font-weight: bold;
+}
+
+#cb-background, #lm-background, #mn-background {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #8ED8F6;
+    width: 500px;
+    height: 200px;
+    align-self: center;
+    justify-self: center;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+#cb-img, #lm-img, #mn-img {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    max-width: 600px;
+    border: 15px solid #8ED8F6;
+    margin-top: 30px;
+    justify-self: center;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+
+
+/* ---------- LA MARTA ------------ */
+#lm-info {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: 50px 25% 500px;
+    padding: 20px;
+}
+
+/* -- Part 1 (Information and details) --- */
+
+/* Details */
+
+/* Description */
+#lm-description {
+    grid-row: 3/4;
+    display: grid;
+    grid-template-rows: 50px 200px;
+    margin-top: 20px;
+}
+
+/* --- Part 2 (Price and image) --- */
+#lm-div {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 70%;
+    padding: 20px;
+}
+
+/* ---------- LAS MINAS ------------ */
+#mn-info {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-rows: 50px 25% 500px;
+    padding: 20px;
+}
+
+/* -- Part 1 (Information and details) --- */
+
+/* Details */
+
+/* Description */
+#mn-description {
+    grid-row: 3/4;
+    display: grid;
+    grid-template-rows: 50px 250px;
+    margin-top: 20px;
+}
+
+/* --- Part 2 (Price and image) --- */
+#mn-div {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 70%;
+    padding: 20px;
+}
 
 
 /* ------------------------------------- FAQS WEBPAGE ----------------------------------------------------- */
